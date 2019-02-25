@@ -4,7 +4,7 @@
 		module="barrierexecutionmode$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190225185610"
+		publication="20190225220654"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

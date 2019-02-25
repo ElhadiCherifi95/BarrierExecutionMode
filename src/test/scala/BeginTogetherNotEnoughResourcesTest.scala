@@ -21,6 +21,8 @@ class BeginTogetherNotEnoughResourcesTest extends FlatSpec{
       }).collect()
     }
 
+    println(barrierException.getMessage)
+
     barrierException.getMessage shouldEqual "[SPARK-24819]: Barrier execution mode does not allow run a barrier stage that requires more slots than the total number of slots in the cluster currently. Please init a new cluster with more CPU cores or repartition the input RDD(s) to reduce the number of slots required to run this barrier stage."
   }
 
