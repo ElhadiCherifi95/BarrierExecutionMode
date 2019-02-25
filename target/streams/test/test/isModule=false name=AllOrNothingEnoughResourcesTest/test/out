@@ -1,0 +1,14 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mAllOrNothingEnoughResourcesTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should run all tasks in parallel when there are enough resources *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  org.apache.spark.scheduler.BarrierJobSlotsNumberCheckFailed: [SPARK-24819]: Barrier execution mode does not allow run a barrier stage that requires more slots than the total number of slots in the cluster currently. Please init a new cluster with more CPU cores or repartition the input RDD(s) to reduce the number of slots required to run this barrier stage.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.checkBarrierStageWithNumSlots(DAGScheduler.scala:432)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.createResultStage(DAGScheduler.scala:446)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.handleJobSubmitted(DAGScheduler.scala:962)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2065)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2057)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2046)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:737)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkContext.runJob(SparkContext.scala:2061)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.apache.spark.SparkContext.runJob(SparkContext.scala:2082)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
